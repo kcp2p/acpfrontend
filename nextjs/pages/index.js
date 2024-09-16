@@ -11,15 +11,28 @@ function Home() {
       <Typography variant="h4" gutterBottom>
         Index
       </Typography>
-      <Button variant="contained" color="primary" href="/page1">
-        Go to Page 1
-      </Button>
-      <Button variant="contained" color="primary" href="/page2">
-        Go to Page 2
-      </Button>
-      <Button variant="contained" color="primary" href="/page3">
-        Go to Page 3
-      </Button>
+      <Grid container spacing={2}>
+        <Grid size={{ xs: 6, md: 6}}>
+          <Button variant="contained" color="primary" href="/page1">
+            Go to Page 1
+          </Button>
+        </Grid>
+        <Grid size={{ xs: 6, md: 6}}>
+          <Button variant="contained" color="primary" href="/page2">
+            Go to Page 2
+          </Button>
+        </Grid>
+        <Grid size={{ xs: 6, md: 6}}>
+          <Button variant="contained" color="primary" href="/page3">
+            Go to Page 3
+          </Button>
+        </Grid>
+        <Grid size={{ xs: 6, md: 6}}>
+          <Button variant="contained" color="primary" href="/">
+            HOME
+          </Button>
+        </Grid>     
+      </Grid>
     </Box>
   );
 }
