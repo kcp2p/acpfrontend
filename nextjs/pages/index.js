@@ -7,7 +7,7 @@ import useBearStore from "@/store/useBearStore";
 
 function Home() {
   return (
-    <Box textAlign="center" p={4} sx={{ border: 1}}>
+    <Box textAlign="center" p={4} sx={{ bgcolor: '#FAD5A5' }}>
       <Typography variant="h4" gutterBottom>
         Index
       </Typography>
