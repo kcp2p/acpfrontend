@@ -7,12 +7,20 @@ import useBearStore from "@/store/useBearStore";
 
 function Home() {
   return (
-    <>
-
-      <main>
-        <Box>This is index page</Box>
-      </main>
-    </>
+    <Box textAlign="center" p={4}>
+      <Typography variant="h4" gutterBottom>
+        Index
+      </Typography>
+      <Button variant="contained" color="primary" href="/page1">
+        Go to Page 1
+      </Button>
+      <Button variant="contained" color="primary" href="/page2">
+        Go to Page 2
+      </Button>
+      <Button variant="contained" color="primary" href="/page3">
+        Go to Page 3
+      </Button>
+    </Box>
   );
 }
 
