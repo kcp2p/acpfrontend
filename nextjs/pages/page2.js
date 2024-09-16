@@ -1,6 +1,17 @@
 import React from "react";
-import { Box } from "@mui/material";
 
-export default function Test() {
-  return <Box>Page2</Box>;
+import { useState } from "react";
+
+export default function Counter() {
+  const [count, setCount] = useState(0);
+
+  function handleClick() {
+    setCount(count + 1);
+  }
+
+  return (
+      <button onClick={handleClick}>
+        You pressed me {count} times
+      </button>
+  );
 }
